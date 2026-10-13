@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FLORA Moda Fitness - Roupas premium para mulheres ativas">
+    <title>FLORA Moda Fitness | Roupas Premium para Treino e Lifestyle</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER/NAVEGAÇÃO -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <p>📞 +55 (61) 99999-9999 | 📧 contato@floramoda.com</p>
+                    <div class="header-links">
+                        <a href="#">Entrar</a>
+                        <span>|</span>
+                        <a href="#">Cadastro</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <h1>FLORA</h1>
+                            <p>MODA FITNESS</p>
+                        </a>
+                    </div>
+
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/catalogo.html">Loja</a></li>
+                        <li><a href="pages/sobre.html">Sobre Nós</a></li>
+                        <li><a href="pages/contato.html">Contato</a></li>
+                    </ul>
+
+                    <div class="header-actions">
+                        <button class="btn-search">🔍</button>
+                        <button class="btn-cart" id="cartBtn">
+                            🛒
+                            <span class="cart-count" id="cartCount">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Sua Melhor Versão Começa Aqui</h2>
+            <p>Moda fitness premium para mulheres que fazem diferença</p>
+            <a href="pages/catalogo.html" class="btn btn-primary">Explorar Coleção</a>
+        </div>
+    </section>
+
+    <!-- CATEGORIAS PRINCIPAIS -->
+    <section class="categorias">
+        <div class="container">
+            <h2 class="section-title">Explore Nossas Categorias</h2>
+            <div class="categorias-grid">
+                <div class="categoria-card">
+                    <div class="categoria-icon">👖</div>
+                    <h3>Leggings & Calças</h3>
+                    <p>Conforto e estilo para todo tipo de treino</p>
+                    <a href="pages/catalogo.html?cat=leggings" class="link-arrow">Ver mais →</a>
+                </div>
+                <div class="categoria-card">
+                    <div class="categoria-icon">👕</div>
+                    <h3>Tops & Blusas</h3>
+                    <p>Peças versáteis para academia e lifestyle</p>
+                    <a href="pages/catalogo.html?cat=tops" class="link-arrow">Ver mais →</a>
+                </div>
+                <div class="categoria-card">
+                    <div class="categoria-icon">🩱</div>
+                    <h3>Shorts & Bermudas</h3>
+                    <p>Cortes modernos e materiais de alta performance</p>
+                    <a href="pages/catalogo.html?cat=shorts" class="link-arrow">Ver mais →</a>
+                </div>
+                <div class="categoria-card">
+                    <div class="categoria-icon">💪</div>
+                    <h3>Sutiãs Esportivos</h3>
+                    <p>Suporte e conforto em cada movimento</p>
+                    <a href="pages/catalogo.html?cat=sutias" class="link-arrow">Ver mais →</a>
+                </div>
+                <div class="categoria-card">
+                    <div class="categoria-icon">💼</div>
+                    <h3>Conjuntos</h3>
+                    <p>Looks prontos para arrasar</p>
+                    <a href="pages/catalogo.html?cat=conjuntos" class="link-arrow">Ver mais →</a>
+                </div>
+                <div class="categoria-card">
+                    <div class="categoria-icon">🧥</div>
+                    <h3>Casacos & Jaquetas</h3>
+                    <p>Finalização perfeita para qualquer estação</p>
+                    <a href="pages/catalogo.html?cat=casacos" class="link-arrow">Ver mais →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTOS EM DESTAQUE -->
+    <section class="destaques">
+        <div class="container">
+            <h2 class="section-title">Lançamentos Recentes</h2>
+            <div class="produtos-grid">
+                <div class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="assets/imagens/produtos/legging-premium.jpg" alt="Legging Premium Flow">
+                        <span class="badge-novo">Novo</span>
+                        <div class="produto-hover">
+                            <button class="btn btn-secondary">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Legging Premium Flow</h3>
+                        <p class="categoria-label">Leggings & Calças</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ (48)</div>
+                        <div class="produto-preco">
+                            <span class="preco-original">R$ 189,90</span>
+                            <span class="preco-atual">R$ 149,90</span>
+                        </div>
+                        <button class="btn btn-add-cart" data-produto="1">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="assets/imagens/produtos/top-elegante.jpg" alt="Top Elegante Básico">
+                        <div class="produto-hover">
+                            <button class="btn btn-secondary">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Top Elegante Básico</h3>
+                        <p class="categoria-label">Tops & Blusas</p>
+                        <div class="rating">⭐⭐⭐⭐ (32)</div>
+                        <div class="produto-preco">
+                            <span class="preco-atual">R$ 99,90</span>
+                        </div>
+                        <button class="btn btn-add-cart" data-produto="2">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="assets/imagens/produtos/short-premium.jpg" alt="Short Praia Poliamida">
+                        <div class="produto-hover">
+                            <button class="btn btn-secondary">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Short Praia Poliamida</h3>
+                        <p class="categoria-label">Shorts & Bermudas</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ (64)</div>
+                        <div class="produto-preco">
+                            <span class="preco-atual">R$ 129,90</span>
+                        </div>
+                        <button class="btn btn-add-cart" data-produto="3">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+
+                <div class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="assets/imagens/produtos/sutia-esportivo.jpg" alt="Sutiã Esportivo Premium">
+                        <span class="badge-desconto">-20%</span>
+                        <div class="produto-hover">
+                            <button class="btn btn-secondary">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="produto-info">
+                        <h3>Sutiã Esportivo Premium</h3>
+                        <p class="categoria-label">Sutiãs Esportivos</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ (91)</div>
+                        <div class="produto-preco">
+                            <span class="preco-original">R$ 179,90</span>
+                            <span class="preco-atual">R$ 143,90</span>
+                        </div>
+                        <button class="btn btn-add-cart" data-produto="4">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO POR QUE FLORA -->
+    <section class="diferenciais">
+        <div class="container">
+            <h2 class="section-title">Por Que Escolher FLORA?</h2>
+            <div class="diferenciais-grid">
+                <div class="diferencial-item">
+                    <div class="diferencial-icon">✨</div>
+                    <h3>Qualidade Premium</h3>
+                    <p>Materiais selecionados com rigor, tecnologia de alta performance</p>
+                </div>
+                <div class="diferencial-item">
+                    <div class="diferencial-icon">🌍</div>
+                    <h3>Sustentabilidade</h3>
+                    <p>Comprometidas com processos éticos e sustentáveis</p>
+                </div>
+                <div class="diferencial-item">
+                    <div class="diferencial-icon">🚚</div>
+                    <h3>Frete Rápido</h3>
+                    <p>Entrega em 3-5 dias úteis para todo o Brasil</p>
+                </div>
+                <div class="diferencial-item">
+                    <div class="diferencial-icon">🔄</div>
+                    <h3>Devoluções Fáceis</h3>
+                    <p>7 dias para devolver, sem perguntas</p>
+                </div>
+                <div class="diferencial-item">
+                    <div class="diferencial-icon">💳</div>
+                    <h3>Pagamento Seguro</h3>
+                    <p>Mercado Pago | PIX | Cartão até 6x</p>
+                </div>
+                <div class="diferencial-item">
+                    <div class="diferencial-icon">👥</div>
+                    <h3>Atendimento Humanizado</h3>
+                    <p>Equipe preparada para tirar suas dúvidas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Receba Nossas Novidades</h2>
+                <p>Tendências, dicas de treino e ofertas exclusivas direto no seu email</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Seu email" required>
+                    <button type="submit" class="btn btn-primary">Inscrever</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FLORA Moda Fitness</h3>
+                    <p>Sua melhor versão começa aqui. Roupas premium para mulheres ativas e inspiradas.</p>
+                    <div class="social-links">
+                        <a href="#" title="Instagram">📱 Instagram</a>
+                        <a href="#" title="Facebook">👍 Facebook</a>
+                        <a href="#" title="TikTok">🎵 TikTok</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/catalogo.html">Loja</a></li>
+                        <li><a href="pages/sobre.html">Sobre Nós</a></li>
+                        <li><a href="pages/contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Devoluções</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📧 contato@floramoda.com</p>
+                    <p>📞 +55 (61) 99999-9999</p>
+                    <p>🕒 Seg-Sex: 9h-18h</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FLORA Moda Fitness. Todos os direitos reservados.</p>
+                <p>Desenvolvido com 💚 por Matheus Sousa</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CARRINHO MODAL -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-content">
+            <button class="close-modal" id="closeCart">&times;</button>
+            <h2>Seu Carrinho</h2>
+            <div class="cart-items" id="cartItems">
+                <p class="cart-vazio">Seu carrinho está vazio</p>
+            </div>
+            <div class="cart-total">
+                <strong>Total:</strong>
+                <span id="cartTotal">R$ 0,00</span>
+            </div>
+            <a href="pages/checkout.html" class="btn btn-primary" style="width: 100%; text-align: center;">Ir para Checkout</a>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/carrinho.js"></script>
+    <script src="js/navegacao.js"></script>
+</body>
+</html>
