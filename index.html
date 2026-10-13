@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>FLORA | Moda Fitness</title>
 <style>
-:root{--ink:#111;--muted:#6b6b6b;--line:#e7e5e4;--soft:#f6f4f2;--accent:#8b1e36;--pix:#0a7a4b;--maxw:1320px}
+:root{--ink:#111;--muted:#6b6b6b;--line:#e7e5e4;--soft:#f6f4f2;--accent:#9c1325;--brand:#9c1325;--rose:#e9808f;--blush:#fbeef0;--pix:#0a7a4b;--maxw:1320px}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:Inter,"Helvetica Neue",Arial,system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -17,26 +17,26 @@ ul{list-style:none}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
 .up{text-transform:uppercase;letter-spacing:.12em}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:48px;padding:0 28px;background:var(--ink);color:#fff;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.14em;border:1px solid var(--ink);border-radius:2px;transition:.25s}
-.btn:hover{background:#fff;color:var(--ink)}
+.btn:hover{background:var(--brand);border-color:var(--brand);color:#fff}
 .btn.light{background:#fff;color:var(--ink);border-color:#fff}
 .btn.light:hover{background:transparent;color:#fff}
 .btn.ghost{background:transparent;color:var(--ink)}
-.btn.ghost:hover{background:var(--ink);color:#fff}
+.btn.ghost:hover{background:var(--brand);border-color:var(--brand);color:#fff}
 .btn.block{width:100%}
 .noimg{background:linear-gradient(135deg,#efe9e6,#d9cfcb)}
 /* announce */
-.announce{background:var(--ink);color:#fff;height:36px;font-size:11px;position:relative;overflow:hidden}
+.announce{background:var(--brand);color:#fff;height:36px;font-size:11px;position:relative;overflow:hidden}
 .announce span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .5s;text-align:center;padding:0 12px}
 .announce span.on{opacity:1}
 /* header */
 header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
-.hmain{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:40px;height:80px}
-.logo{display:flex;flex-direction:column;line-height:1}
-.logo b{font-size:26px;font-weight:800;letter-spacing:.32em;margin-right:-.32em}
-.logo small{font-size:8.5px;letter-spacing:.42em;color:var(--muted);margin-top:5px;text-transform:uppercase}
+.hmain{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:40px;height:88px}
+.logo{display:block;line-height:0;flex:none}
+.logo img{height:72px;width:auto;max-width:100%;aspect-ratio:1.75;object-fit:cover;object-position:center}
+.fg .logo img{height:104px}
 .search{position:relative;max-width:560px;width:100%;margin:0 auto}
 .search input{width:100%;height:46px;border:1px solid var(--line);background:var(--soft);padding:0 48px 0 20px;border-radius:2px;font:inherit;font-size:14px;outline:0;transition:.2s}
-.search input:focus{background:#fff;border-color:var(--ink)}
+.search input:focus{background:#fff;border-color:var(--brand)}
 .search .ic{position:absolute;right:16px;top:13px;color:var(--muted);pointer-events:none}
 .sug{position:absolute;top:calc(100% + 6px);left:0;right:0;background:#fff;border:1px solid var(--line);box-shadow:0 20px 40px rgba(0,0,0,.1);display:none;z-index:60}
 .sug.on{display:block}
@@ -47,16 +47,16 @@ header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid 
 .sug p{padding:16px;font-size:13px;color:var(--muted)}
 .hact{display:flex;gap:4px;align-items:center}
 .ib{position:relative;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;transition:.2s}
-.ib:hover{background:var(--soft)}
+.ib:hover{background:var(--blush);color:var(--brand)}
 .ib .ic{width:22px;height:22px}
-.cnt{position:absolute;top:3px;right:2px;min-width:18px;height:18px;border-radius:9px;background:var(--ink);color:#fff;font-size:10px;font-weight:700;display:grid;place-items:center;padding:0 4px}
+.cnt{position:absolute;top:3px;right:2px;min-width:18px;height:18px;border-radius:9px;background:var(--brand);color:#fff;font-size:10px;font-weight:700;display:grid;place-items:center;padding:0 4px}
 .cnt:empty,.cnt[data-n="0"]{display:none}
 .burger{display:none}
 nav.cats{border-top:1px solid var(--line)}
 nav.cats ul{display:flex;justify-content:center;gap:36px}
 nav.cats>.wrap>ul>li{position:static}
 nav.cats a.top{display:block;padding:15px 0;font-size:12px;font-weight:600;position:relative}
-nav.cats a.top::after{content:"";position:absolute;left:0;bottom:8px;height:1px;width:0;background:var(--ink);transition:.25s}
+nav.cats a.top::after{content:"";position:absolute;left:0;bottom:8px;height:1px;width:0;background:var(--brand);transition:.25s}
 nav.cats li:hover>a.top::after{width:100%}
 nav.cats a.sale{color:var(--accent)}
 .mega{position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 24px 40px rgba(0,0,0,.08);opacity:0;visibility:hidden;transform:translateY(8px);transition:.25s}
@@ -66,7 +66,7 @@ nav.cats li:hover .mega{opacity:1;visibility:visible;transform:none}
 .mega h5{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
 .mega li{margin-bottom:9px}
 .mega li a{font-size:14px;color:var(--muted)}
-.mega li a:hover{color:var(--ink)}
+.mega li a:hover{color:var(--brand)}
 .mega .pic{position:relative;aspect-ratio:16/10;overflow:hidden}
 .mega .pic img{width:100%;height:100%;object-fit:cover}
 .mega .pic span{position:absolute;left:16px;bottom:14px;color:#fff;font-size:12px;font-weight:600}
@@ -93,13 +93,13 @@ nav.cats li:hover .mega{opacity:1;visibility:visible;transform:none}
 .ben .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
 .ben div{display:flex;gap:14px;align-items:center;padding:24px 20px;border-right:1px solid var(--line)}
 .ben div:last-child{border:0}
-.ben .ic{width:30px;height:30px;stroke-width:1.3}
+.ben .ic{width:30px;height:30px;stroke-width:1.3;color:var(--brand)}
 .ben b{display:block;font-size:13px;font-weight:600}
 .ben span{font-size:12px;color:var(--muted)}
 /* sections */
 section.s{padding:84px 0}
 .sh{text-align:center;margin-bottom:44px}
-.sh small{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.sh small{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--brand)}
 .sh h2{font-size:clamp(26px,3vw,38px);font-weight:300;letter-spacing:-.01em;margin-top:8px}
 .sh h2 b{font-weight:700}
 .sh p{max-width:520px;margin:12px auto 0;color:var(--muted);font-size:14px}
@@ -108,6 +108,8 @@ section.s{padding:84px 0}
 .link{display:inline-flex;gap:8px;align-items:center;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;border-bottom:1px solid var(--ink);padding-bottom:3px}
 .link .ic{width:16px;height:16px;transition:.2s}
 .link:hover .ic{transform:translateX(4px)}
+.link{border-bottom-color:var(--brand)}
+.link:hover{color:var(--brand)}
 /* category tiles */
 .tiles{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
 .tile{position:relative;aspect-ratio:3/4.2;overflow:hidden;display:block}
@@ -147,7 +149,7 @@ section.s{padding:84px 0}
 .sz{display:flex;gap:6px;margin:14px 0 10px}
 .sz button{flex:1;height:34px;border:1px solid var(--line);font-size:12px;font-weight:600;transition:.15s}
 .sz button:hover{border-color:var(--ink)}
-.sz button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.sz button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
 .sz.err button{animation:sh .4s;border-color:var(--accent)}
 @keyframes sh{25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}
 .card .btn{height:42px;margin-top:auto}
@@ -165,7 +167,7 @@ section.s{padding:84px 0}
 .chips{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:36px}
 .chip{height:40px;padding:0 22px;border:1px solid var(--line);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;border-radius:20px;transition:.2s}
 .chip:hover{border-color:var(--ink)}
-.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.chip.on{background:var(--brand);color:#fff;border-color:var(--brand)}
 .qtag{display:none;align-items:center;gap:8px;margin:0 auto 24px;width:max-content;background:var(--soft);padding:8px 8px 8px 16px;font-size:13px;border-radius:20px}
 .qtag.on{display:flex}
 .qtag button{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:#fff}
@@ -180,7 +182,7 @@ section.s{padding:84px 0}
 .tech h2 b{font-weight:700}
 .tech li{display:flex;gap:18px;padding:22px 0;border-top:1px solid rgba(255,255,255,.18)}
 .tech li:last-child{border-bottom:1px solid rgba(255,255,255,.18)}
-.tech li .ic{width:30px;height:30px;stroke-width:1.2}
+.tech li .ic{width:30px;height:30px;stroke-width:1.2;color:var(--rose)}
 .tech li b{display:block;font-size:15px;margin-bottom:2px}
 .tech li span{font-size:13px;opacity:.7}
 /* looks */
@@ -192,23 +194,23 @@ section.s{padding:84px 0}
 .look h3{font-size:18px;font-weight:600;margin:6px 0 8px;line-height:1.3}
 .look p{font-size:14px;color:var(--muted);margin-bottom:12px}
 /* news */
-.news{background:var(--soft);text-align:center}
+.news{background:var(--blush);text-align:center}
 .news form{display:flex;max-width:520px;margin:28px auto 0}
-.news input{flex:1;height:52px;border:1px solid var(--ink);border-right:0;padding:0 20px;font:inherit;font-size:14px;outline:0;border-radius:2px 0 0 2px;background:#fff;min-width:0}
+.news input{flex:1;height:52px;border:1px solid var(--brand);border-right:0;padding:0 20px;font:inherit;font-size:14px;outline:0;border-radius:2px 0 0 2px;background:#fff;min-width:0}
 .news .btn{height:52px;border-radius:0 2px 2px 0}
 /* footer */
-footer{background:#fff;border-top:1px solid var(--line);padding-top:64px;font-size:14px}
+footer{background:#fff;border-top:3px solid var(--brand);padding-top:64px;font-size:14px}
 .fg{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:48px;padding-bottom:48px}
 .fg p{color:var(--muted);max-width:320px;margin:16px 0 20px;font-size:13px}
 .soc{display:flex;gap:8px}
 .soc a{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;transition:.2s}
-.soc a:hover{background:var(--ink);color:#fff}
+.soc a:hover{background:var(--brand);border-color:var(--brand);color:#fff}
 details summary{list-style:none;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;cursor:default}
 details summary::-webkit-details-marker{display:none}
 details summary .ic{display:none;width:18px;height:18px}
 details li{margin-bottom:10px}
 details li a{color:var(--muted);font-size:13px}
-details li a:hover{color:var(--ink)}
+details li a:hover{color:var(--brand)}
 .pay{border-top:1px solid var(--line);padding:24px 0;display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap;font-size:12px;color:var(--muted)}
 .pay div{display:flex;gap:8px;flex-wrap:wrap}
 .pay span.m{border:1px solid var(--line);padding:6px 12px;font-size:11px;font-weight:700;letter-spacing:.06em;color:var(--ink)}
@@ -225,7 +227,7 @@ details li a:hover{color:var(--ink)}
 .df{padding:20px 24px;border-top:1px solid var(--line)}
 .ship{padding:16px 24px;background:var(--soft);font-size:13px}
 .bar{height:4px;background:#ddd;margin-top:10px}
-.bar i{display:block;height:100%;background:var(--pix);width:0;transition:width .4s}
+.bar i{display:block;height:100%;background:var(--brand);width:0;transition:width .4s}
 .li{display:grid;grid-template-columns:76px 1fr auto;gap:14px;padding:18px 0;border-bottom:1px solid var(--line)}
 .li img{width:76px;height:100px;object-fit:cover;background:var(--soft)}
 .li h5{font-size:13px;font-weight:500}
@@ -255,9 +257,10 @@ details li a:hover{color:var(--ink)}
 .wrap{padding:0 16px}
 .burger{display:grid}
 nav.cats{display:none}
-.hmain{grid-template-columns:44px 1fr auto;height:64px;gap:4px}
-.hmain .logo{align-items:center}
-.logo b{font-size:20px}
+.hmain{grid-template-columns:44px 1fr auto;height:62px;gap:4px}
+.hmain .logo{justify-self:center}
+.logo img{height:52px}
+.fg .logo img{height:88px}
 .search.d{display:none}
 .hide-m{display:none}
 .hero{height:520px}
@@ -337,7 +340,7 @@ details[open] summary .ic{transform:rotate(180deg)}
 <header>
 <div class="wrap hmain">
 <button class="ib burger" data-act="menu" aria-label="Menu"><svg class="ic"><use href="#i-menu"/></svg></button>
-<a href="#" class="logo" aria-label="FLORA"><b>FLORA</b><small>Moda Fitness</small></a>
+<a href="#" class="logo" aria-label="FLORA Moda Fitness – início"><img src="https://d31zra5bs5df64.cloudfront.net/prod/3EtgXql2FvedxrFJeAujiJnHUL6/chat/3KbvPkEDDY2ZVzmOKotSdBx5KFa/3KeZ0JCYzmnWmrIu8GUzUfPMUTT.png?Expires=1791923369&Key-Pair-Id=K2FT0I8VPJSP5H&Signature=SeEkyzCt5horEjWClaKCO-iOrT-A43nHk26GCzgrmw-hE2gsfr3b68GAIpjGGn5AWnh-Qa5L1TZbLOjvb5scMB0XfZXho4k~vFfPFOMTlKdCv3E2Y37teAvG~uqyptbOColv2996JLZcwymGlC7KdAJKajhpfC9gmtXpifQ-dREHf42~divhIPFcHz~8eePuSRCGQsilbj9naaTbR0iDMmMcytmSABFkBqnm0Wh~iIJKcKgi9daOgzccbesA2gh1fNnxuM6g0FUwVCmBpwYZQqdTble02Zr5UJ9-Sf9mpyscmuYz8-x3vGwVh1QunqyWPUGf5hMyjsNtT1d9eUd9OQ__" alt="FLORA Moda Fitness" width="126" height="72"></a>
 <div class="search d" id="sd" style="grid-column:2;grid-row:1">
 <input type="search" placeholder="O que você procura hoje?" data-search autocomplete="off">
 <svg class="ic"><use href="#i-search"/></svg>
@@ -391,7 +394,7 @@ details[open] summary .ic{transform:rotate(180deg)}
 </div></section>
 
 <section class="s" id="lancamentos" style="background:var(--soft)"><div class="wrap">
-<div class="sh left"><div><small style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)">Acabou de chegar</small><h2 style="margin-top:8px">Lançamentos</h2></div><a href="#vitrine" class="link" data-cat="todos">Ver tudo <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+<div class="sh left"><div><small style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--brand)">Acabou de chegar</small><h2 style="margin-top:8px">Lançamentos</h2></div><a href="#vitrine" class="link" data-cat="todos">Ver tudo <svg class="ic"><use href="#i-arrow"/></svg></a></div>
 <div class="rail">
 <button class="rarr p" data-rail="-1" aria-label="Anterior"><svg class="ic"><use href="#i-left"/></svg></button>
 <div class="track" id="rail"></div>
@@ -422,7 +425,7 @@ details[open] summary .ic{transform:rotate(180deg)}
 </div></section>
 
 <section class="s" id="looks"><div class="wrap">
-<div class="sh left"><div><small style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)">Inspiração</small><h2 style="margin-top:8px">Looks com <b>atitude</b></h2></div><a href="#vitrine" class="link">Ver coleção <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+<div class="sh left"><div><small style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--brand)">Inspiração</small><h2 style="margin-top:8px">Looks com <b>atitude</b></h2></div><a href="#vitrine" class="link">Ver coleção <svg class="ic"><use href="#i-arrow"/></svg></a></div>
 <div class="looks">
 <article class="look"><div class="ph"><img data-img="look1" alt=""></div><small>Treino intenso</small><h3>Power total: top + legging de cintura alta</h3><p>Combine tons neutros com uma peça de destaque.</p><a class="link" href="#vitrine">Comprar o look <svg class="ic"><use href="#i-arrow"/></svg></a></article>
 <article class="look"><div class="ph"><img data-img="look2" alt=""></div><small>Do treino ao café</small><h3>Casual fitness: short biker e camiseta ampla</h3><p>Leveza e conforto para qualquer momento do dia.</p><a class="link" href="#vitrine">Comprar o look <svg class="ic"><use href="#i-arrow"/></svg></a></article>
@@ -437,7 +440,7 @@ details[open] summary .ic{transform:rotate(180deg)}
 
 <footer><div class="wrap">
 <div class="fg">
-<div><a href="#" class="logo"><b>FLORA</b><small>Moda Fitness</small></a><p>Moda fitness premium para quem vive em movimento. Conteúdo de exemplo para apresentação.</p>
+<div><a href="#" class="logo" aria-label="FLORA Moda Fitness"><img src="https://d31zra5bs5df64.cloudfront.net/prod/3EtgXql2FvedxrFJeAujiJnHUL6/chat/3KbvPkEDDY2ZVzmOKotSdBx5KFa/3KeZ0JCYzmnWmrIu8GUzUfPMUTT.png?Expires=1791923369&Key-Pair-Id=K2FT0I8VPJSP5H&Signature=SeEkyzCt5horEjWClaKCO-iOrT-A43nHk26GCzgrmw-hE2gsfr3b68GAIpjGGn5AWnh-Qa5L1TZbLOjvb5scMB0XfZXho4k~vFfPFOMTlKdCv3E2Y37teAvG~uqyptbOColv2996JLZcwymGlC7KdAJKajhpfC9gmtXpifQ-dREHf42~divhIPFcHz~8eePuSRCGQsilbj9naaTbR0iDMmMcytmSABFkBqnm0Wh~iIJKcKgi9daOgzccbesA2gh1fNnxuM6g0FUwVCmBpwYZQqdTble02Zr5UJ9-Sf9mpyscmuYz8-x3vGwVh1QunqyWPUGf5hMyjsNtT1d9eUd9OQ__" alt="FLORA Moda Fitness" loading="lazy"></a><p>Moda fitness premium para quem vive em movimento. Conteúdo de exemplo para apresentação.</p>
 <div class="soc"><a href="#" aria-label="Instagram"><svg class="ic"><use href="#i-ig"/></svg></a><a href="#" aria-label="WhatsApp"><svg class="ic"><use href="#i-chat"/></svg></a><a href="#" aria-label="Vídeos"><svg class="ic"><use href="#i-play"/></svg></a><a href="#" aria-label="E-mail"><svg class="ic"><use href="#i-mail"/></svg></a></div></div>
 <details><summary>Loja <svg class="ic"><use href="#i-down"/></svg></summary><ul><li><a href="#lancamentos">Lançamentos</a></li><li><a href="#vitrine" data-cat="leggings">Leggings</a></li><li><a href="#vitrine" data-cat="tops">Tops e sutiãs</a></li><li><a href="#vitrine" data-cat="shorts">Shorts e bermudas</a></li><li><a href="#vitrine" data-cat="conjuntos">Conjuntos</a></li></ul></details>
 <details><summary>Institucional <svg class="ic"><use href="#i-down"/></svg></summary><ul><li><a href="#">Quem somos</a></li><li><a href="#looks">Looks e inspiração</a></li><li><a href="#">Política de privacidade</a></li><li><a href="#">Termos de uso</a></li></ul></details>
