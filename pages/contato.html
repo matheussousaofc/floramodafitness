@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | FLORA Moda Fitness</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/componentes.css">
+    <link rel="stylesheet" href="../css/responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER/NAVEGAÇÃO -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <p>📞 +55 (61) 99999-9999 | 📧 contato@floramoda.com</p>
+                    <div class="header-links">
+                        <a href="#">Entrar</a>
+                        <span>|</span>
+                        <a href="#">Cadastro</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <div class="logo">
+                        <a href="../index.html">
+                            <h1>FLORA</h1>
+                            <p>MODA FITNESS</p>
+                        </a>
+                    </div>
+
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="catalogo.html">Loja</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="contato.html" class="ativo">Contato</a></li>
+                    </ul>
+
+                    <div class="header-actions">
+                        <button class="btn-search">🔍</button>
+                        <button class="btn-cart" id="cartBtn">
+                            🛒
+                            <span class="cart-count" id="cartCount">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Home</a> / <span>Contato</span>
+        </div>
+    </div>
+
+    <!-- CONTATO -->
+    <main class="contato-main">
+        <div class="container">
+            <h1 class="page-title">Entre em Contato</h1>
+            <p class="page-subtitle">Estamos aqui para tirar suas dúvidas e ouvir sugestões</p>
+
+            <div class="contato-container">
+                <!-- FORMULÁRIO -->
+                <div class="contato-form">
+                    <h2>Envie-nos uma Mensagem</h2>
+                    <form id="contatoForm">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Telefone (opcional)</label>
+                            <input type="tel" id="telefone" name="telefone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <select id="assunto" name="assunto" required>
+                                <option>Selecione um assunto</option>
+                                <option>Dúvida sobre Produto</option>
+                                <option>Rastreamento de Pedido</option>
+                                <option>Reclamação</option>
+                                <option>Sugestão</option>
+                                <option>Parcerias</option>
+                                <option>Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensagem</button>
+                    </form>
+                    <p class="form-success" style="display: none; color: green; margin-top: 15px; text-align: center;">✅ Mensagem enviada com sucesso! Responderemos em breve.</p>
+                </div>
+
+                <!-- INFORMAÇÕES DE CONTATO -->
+                <aside class="contato-info">
+                    <h2>Informações de Contato</h2>
+
+                    <div class="info-item">
+                        <h3>📞 Telefone</h3>
+                        <p>+55 (61) 99999-9999</p>
+                        <p class="horario">Seg-Sex: 9h-18h | Sáb: 10h-14h</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:contato@floramoda.com">contato@floramoda.com</a></p>
+                        <p class="horario">Resposta em até 24h</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>📱 Redes Sociais</h3>
+                        <p>
+                            <a href="#">Instagram</a> | 
+                            <a href="#">Facebook</a> | 
+                            <a href="#">TikTok</a>
+                        </p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>📍 Localização</h3>
+                        <p>Brasília, DF</p>
+                        <p>Brasil</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h3>🕒 Horário de Atendimento</h3>
+                        <p>Segunda a Sexta: 9h - 18h</p>
+                        <p>Sábado: 10h - 14h</p>
+                        <p>Domingo: Fechado</p>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- FAQ -->
+            <section class="faq">
+                <h2>Perguntas Frequentes</h2>
+                <div class="faq-items">
+                    <div class="faq-item">
+                        <h3>❓ Qual é o prazo de entrega?</h3>
+                        <p>Oferecemos frete padrão (5-7 dias), express (2-3 dias) e agendado. O prazo começa a contar após a confirmação do pagamento.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>❓ Qual é a política de devoluções?</h3>
+                        <p>Você tem até 7 dias após receber o produto para solicitar devolução. O produto deve estar íntegro, com tags e embalagem original.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>❓ Vocês trabalham com revendedoras?</h3>
+                        <p>Sim! Temos programas especiais para revendedoras. Entre em contato conosco para mais informações.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>❓ Os produtos são originais?</h3>
+                        <p>Sim, todos os produtos FLORA são 100% originais. Vêm com tags e embalagem padrão FLORA.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>❓ Qual o método de pagamento mais seguro?</h3>
+                        <p>Todos os métodos (PIX, Cartão) utilizam Mercado Pago, garantindo segurança com certificação PCI-DSS.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>❓ Como rastrear meu pedido?</h3>
+                        <p>Após o pedido ser enviado, você receberá um código de rastreamento por email. Use-o para acompanhar sua encomenda.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FLORA Moda Fitness</h3>
+                    <p>Sua melhor versão começa aqui. Roupas premium para mulheres ativas e inspiradas.</p>
+                    <div class="social-links">
+                        <a href="#" title="Instagram">📱 Instagram</a>
+                        <a href="#" title="Facebook">👍 Facebook</a>
+                        <a href="#" title="TikTok">🎵 TikTok</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="catalogo.html">Loja</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Devoluções</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📧 contato@floramoda.com</p>
+                    <p>📞 +55 (61) 99999-9999</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FLORA Moda Fitness. Todos os direitos reservados.</p>
+                <p>Desenvolvido com 💚 por Matheus Sousa</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/navegacao.js"></script>
+    <script>
+        // Script do formulário de contato
+        const contatoForm = document.getElementById('contatoForm');
+        const formSuccess = document.querySelector('.form-success');
+
+        contatoForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simular envio (sem backend real)
+            setTimeout(() => {
+                contatoForm.reset();
+                formSuccess.style.display = 'block';
+                
+                setTimeout(() => {
+                    formSuccess.style.display = 'none';
+                }, 5000);
+            }, 500);
+        });
+    </script>
+</body>
+</html>
