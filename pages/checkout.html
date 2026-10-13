@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | FLORA Moda Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .checkout-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 350px;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .checkout-section {
+            background-color: var(--cor-fundo-light);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .checkout-section h3 {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-row input {
+            padding: 0.75rem;
+            border: 1px solid var(--cor-borda);
+            border-radius: 0.5rem;
+            font-family: var(--font-corpo);
+        }
+
+        .order-summary {
+            background-color: var(--cor-fundo-light);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            height: fit-content;
+        }
+
+        .order-summary h3 {
+            margin-bottom: 1.5rem;
+        }
+
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--cor-borda);
+        }
+
+        .order-total {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.25rem;
+            font-weight: 700;
+            padding: 1rem 0;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .checkout-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <!-- ... Reutilizar do index.html ... -->
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div style="padding: 1rem 2rem; background-color: var(--cor-fundo-light); border-bottom: 1px solid var(--cor-borda);">
+        <div class="container" style="font-size: 0.875rem;">
+            <a href="../index.html">Home</a> / <a href="catalogo.html">Loja</a> / <span>Checkout</span>
+        </div>
+    </div>
+
+    <!-- CHECKOUT -->
+    <main class="container">
+        <div class="checkout-wrapper">
+            <!-- FORMULÁRIO -->
+            <div>
+                <!-- Endereço -->
+                <div class="checkout-section">
+                    <h3>Endereço de Entrega</h3>
+                    <div class="form-row">
+                        <input type="text" placeholder="Nome Completo" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" placeholder="Telefone" required>
+                        <input type="text" placeholder="CEP" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Rua" required>
+                        <input type="text" placeholder="Número" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Bairro" required>
+                        <input type="text" placeholder="Cidade" required>
+                    </div>
+                </div>
+
+                <!-- Frete -->
+                <div class="checkout-section">
+                    <h3>Opções de Frete</h3>
+                    <label style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                        <input type="radio" name="frete" checked>
+                        <span>
+                            <strong>Frete Padrão</strong> - Entrega em 5-7 dias<br>
+                            <span style="color: #C4324D; font-weight: 700;">R$ 15,90</span>
+                        </span>
+                    </label>
+                    <label style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                        <input type="radio" name="frete">
+                        <span>
+                            <strong>Frete Express</strong> - Entrega em 2-3 dias<br>
+                            <span style="color: #C4324D; font-weight: 700;">R$ 29,90</span>
+                        </span>
+                    </label>
+                    <label style="display: flex; gap: 1rem;">
+                        <input type="radio" name="frete">
+                        <span>
+                            <strong>Agendado</strong> - Escolha a data<br>
+                            <span style="color: #C4324D; font-weight: 700;">R$ 39,90</span>
+                        </span>
+                    </label>
+                </div>
+
+                <!-- Pagamento -->
+                <div class="checkout-section">
+                    <h3>Forma de Pagamento</h3>
+                    <label style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                        <input type="radio" name="pagamento" checked>
+                        <span>💳 PIX - Confirmação Instantânea</span>
+                    </label>
+                    <label style="display: flex; gap: 1rem;">
+                        <input type="radio" name="pagamento">
+                        <span>💳 Cartão de Crédito - Até 6x</span>
+                    </label>
+                </div>
+
+                <button class="btn btn-primary btn-lg btn-full">Confirmar Pedido</button>
+            </div>
+
+            <!-- RESUMO -->
+            <div class="order-summary">
+                <h3>Resumo do Pedido</h3>
+                <div class="order-item">
+                    <span>Legging Premium Flow</span>
+                    <span>R$ 149,90</span>
+                </div>
+                <div class="order-item">
+                    <span>Top Elegante Básico</span>
+                    <span>R$ 99,90</span>
+                </div>
+                <div class="order-item" style="border-bottom: none;">
+                    <span>Short Praia Poliamida</span>
+                    <span>R$ 129,90</span>
+                </div>
+                <div class="order-item" style="padding: 1rem 0; border-top: 1px solid var(--cor-borda);">
+                    <span>Subtotal</span>
+                    <span>R$ 379,70</span>
+                </div>
+                <div class="order-item">
+                    <span>Frete</span>
+                    <span>R$ 15,90</span>
+                </div>
+                <div class="order-total">
+                    <span>Total</span>
+                    <span>R$ 395,60</span>
+                </div>
+                <p style="font-size: 0.875rem; color: #666; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--cor-borda);">
+                    🔒 Sua compra é 100% segura com Mercado Pago
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <!-- ... Reutilizar ... -->
+    </footer>
+
+    <script src="../js/app.js"></script>
+</body>
+</html>
